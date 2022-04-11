@@ -1,5 +1,4 @@
 import React from 'react'; 
-import PropTypes from 'prop-types';
 import {Candidates} from './../api/candidates.js'; 
 
 export default class Candidate extends React.Component{
@@ -23,6 +22,3 @@ export default class Candidate extends React.Component{
   }
 };
 
-Candidate.propTypes = {
-    candidate_prop: PropTypes.object.isRequired,
-};

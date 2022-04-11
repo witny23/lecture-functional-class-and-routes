@@ -33,3 +33,23 @@ Stop runaway node or mongo on windows
 
 taskkill /f /im mongod.exe
 taskkill /f /im node.exe
+
+ANSWER for footer
+
+
+<Footer footer_prop={footer_content}/>
+
+
+Footer.js
+
+import React, { useState } from "react";
+
+
+export default Footer = (props) => {
+  const [footer_state, setFooterState] = useState(props.footer_prop);
+  
+  return (
+      <>
+        <h1>{footer_state}</h1>
+      </>
+  );

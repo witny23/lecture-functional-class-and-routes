@@ -1,20 +1,13 @@
-import React from 'react'; 
-import PropTypes from 'prop-types';
+import React, { useState } from "react";
 
 
-export default class Footer extends React.Component{
-  render(){
-    return (
+export default Footer = (props) => {
+  const [footer_state, setFooterState] = useState(props.footer_prop);
+  
+  return (
       <>
-        <hr />
-        <h1>{this.props.footer_prop}</h1>
+        <h1>{footer_state}</h1>
       </>
-    );
-  }
-};
+  );
 
-
-
-Footer.propTypes = {
-    footer_prop: PropTypes.string.isRequired,
 };
