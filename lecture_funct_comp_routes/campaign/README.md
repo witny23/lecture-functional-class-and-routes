@@ -1,5 +1,5 @@
 
-git Lecture: functional component converstion
+git Lecture: functional component conversion 
 
 GOALS
 
@@ -27,6 +27,10 @@ GOALS
 
     More advanced - functional components can implement Hooks to use the state and other React features even without writing the Class Component
 
+    FORMS (AddCandidates.js)
+        Simplifying React Forms with Hooks
+        https://rangle.io/blog/simplifying-controlled-inputs-with-hooks/
+
 
 
 Stop runaway node or mongo on windows
@@ -34,22 +38,3 @@ Stop runaway node or mongo on windows
 taskkill /f /im mongod.exe
 taskkill /f /im node.exe
 
-ANSWER for footer
-
-
-<Footer footer_prop={footer_content}/>
-
-
-Footer.js
-
-import React, { useState } from "react";
-
-
-export default Footer = (props) => {
-  const [footer_state, setFooterState] = useState(props.footer_prop);
-  
-  return (
-      <>
-        <h1>{footer_state}</h1>
-      </>
-  );

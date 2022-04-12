@@ -8,11 +8,11 @@ export default Instructions_part02 = () => {
       </p>
       <h2>Part 2a: Practice with a function component</h2>
       <ul>
-        <li>Replace as many class components as possible - search and find. The following is a partial list:
+        <li>Replace as many class components as possible - search as needed to find functional class examples.
           <ul>
-            <li>AddCandidates.js</li>
-            <li>Candidate.js</li>
             <li>TitleBar.js</li>
+            <li>Candidate.js</li>
+            <li>AddCandidates.js</li>
           </ul>
         </li>
       </ul>
