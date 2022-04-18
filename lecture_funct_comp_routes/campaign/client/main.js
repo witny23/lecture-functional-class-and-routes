@@ -4,9 +4,10 @@ import {Meteor} from 'meteor/meteor';
 import {Tracker} from 'meteor/tracker';
 import TitleBar from './../imports/ui/TitleBar.js'; 
 import NavButtons from '../imports/ui/Instruction/NavButtons.js';
-import AddCandidates from './../imports/ui/AddCandidates.js';
+// import AddCandidates from './../imports/ui/AddCandidates.js';
 import {Candidates} from './../imports/api/candidates.js'; 
 import RenderCandidates from './../imports/ui/RenderCandidates.js';  
+import Form from './../imports/ui/Form.js';
 
 Meteor.startup(() => {
   Tracker.autorun(() => { 
@@ -17,7 +18,8 @@ Meteor.startup(() => {
         <NavButtons/>
 
         <TitleBar titleBar_prop={title}/>
-        <AddCandidates/>
+        {/* <AddCandidates/> */}
+        <Form />
         <RenderCandidates candidate_prop = {Candidates.find().fetch()}/>
       </>
     );

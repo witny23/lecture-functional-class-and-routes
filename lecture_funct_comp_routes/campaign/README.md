@@ -1,5 +1,5 @@
 
-git Lecture/Challenge: React Forms
+git Lecture/Challenge: React Forms Solution
 
 GOALS
 
